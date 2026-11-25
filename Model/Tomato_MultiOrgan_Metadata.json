@@ -1,0 +1,43 @@
+{
+    "model_name": "Tomato_MultiOrgan_MobileNetV2",
+    "input_shape": [
+        224,
+        224,
+        3
+    ],
+    "input_color": "RGB",
+    "input_preprocessing": "MobileNetV2 preprocess_input is included inside the model",
+    "organ_output": {
+        "0": "Leaf",
+        "1": "Stem",
+        "2": "Fruit"
+    },
+    "disease_output": {
+        "0": "Viral",
+        "1": "Wilt",
+        "2": "GrayMold"
+    },
+    "valid_combinations": [
+        [
+            "Leaf",
+            "Viral"
+        ],
+        [
+            "Leaf",
+            "Wilt"
+        ],
+        [
+            "Leaf",
+            "GrayMold"
+        ],
+        [
+            "Stem",
+            "Wilt"
+        ],
+        [
+            "Fruit",
+            "GrayMold"
+        ]
+    ],
+    "model_input_type": "Cropped plant-organ image"
+}
