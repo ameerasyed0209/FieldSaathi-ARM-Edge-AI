@@ -236,14 +236,21 @@ FieldSaathi-ARM-Edge-AI/
 │
 ├── Android_App/
 │   ├── app/
-│   │   └── src/main/
-│   │       ├── assets/
-│   │       ├── java/com/baasc/krishisaathi/
-│   │       └── AndroidManifest.xml
+│   │   ├── build.gradle.kts
+│   │   └── src/
 │   ├── cameratest/
+│   │   ├── build.gradle.kts
+│   │   └── src/
 │   ├── gradle/
+│   │   ├── libs.versions.toml
+│   │   └── wrapper/
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
 │   ├── build.gradle.kts
 │   ├── settings.gradle.kts
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
 │   └── README.md
 │
 ├── Model/
@@ -254,7 +261,7 @@ FieldSaathi-ARM-Edge-AI/
 │   └── README.md
 │
 ├── PlantCity_ML/
-│   ├── Copy_of_Cropdisease.ipynb
+│   ├── Copy_of_Cropdiesease.ipynb
 │   ├── RaspberryPi/
 │   │   ├── server/
 │   │   │   └── server.py
